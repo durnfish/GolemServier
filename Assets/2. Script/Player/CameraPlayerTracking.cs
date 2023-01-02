@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class cameraPlayerTracking : MonoBehaviour
+public class CameraPlayerTracking : MonoBehaviour
 {
     [SerializeField] Transform player;
     [SerializeField] float smoothing;
