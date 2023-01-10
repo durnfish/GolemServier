@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerObject : MonoBehaviour
 {
-    public static PlayerObject player;
 
     // 플레이어 레벨
     internal int level;
@@ -14,7 +13,7 @@ public class PlayerObject : MonoBehaviour
     public float hpMax;
 
     // 플레이어 공격력 배수
-    public float atkPointPulti;
+    public float atkPointMulti;
 
     // 플레이어 경험치
     public float expCurrent;
@@ -25,13 +24,5 @@ public class PlayerObject : MonoBehaviour
     public float speed;
 
     //플레이어 쓰끼리 - 
-
-    //플레이어 오브젝트 싱글톤 구현
-    private void Awake()
-    {
-        if(player == null)
-        {
-            player = this;
-        }
-    }
+    public float atkPoint;
 }

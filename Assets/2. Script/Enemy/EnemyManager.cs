@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     TimerManager time;
     private void Awake()
     {
-        time = TimerManager.timer;
+        
     }
     void EnemyStatusUP()
     {

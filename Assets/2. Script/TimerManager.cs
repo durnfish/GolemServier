@@ -5,18 +5,12 @@ using UnityEngine.UI;
 
 public class TimerManager : MonoBehaviour
 {
-    //싱글톤 생성
-    public static TimerManager timer;
 
     DateTime startTime;
     [SerializeField] Text text;
 
     private void Awake()
     {
-        if (timer == null)
-        {
-            timer = this;
-        }
         //게임이 시작될 때의 시간 표시
         startTime = DateTime.Now;
     }
