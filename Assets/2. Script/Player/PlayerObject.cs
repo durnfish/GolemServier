@@ -23,6 +23,6 @@ public class PlayerObject : MonoBehaviour
     //플레이어 이동속도
     public float speed;
 
-    //플레이어 쓰끼리 - 
-    public float atkPoint;
+    //플레이어 쓰끼리 지속시간
+    public float atkFrequency;
 }

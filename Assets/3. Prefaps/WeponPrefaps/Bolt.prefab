@@ -171,3 +171,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   speed: 10
+  wepon: {fileID: 3022708402029639477}

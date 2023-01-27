@@ -299,7 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wepon: {fileID: 3022708402029639477, guid: 35ff2b2a92f579041a62c4e4ba12078a, type: 3}
   parent: {fileID: 695107110}
-  frequency: 0.2
+  atkSpeed: 0.2
   numProjectiles: 1
 --- !u!1 &764121755
 GameObject:
@@ -1785,14 +1785,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1c17530259db64cafda4ef293053c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpCurrent: 0
-  hpMax: 0
-  atkPointMulti: 0
+  hpCurrent: 50
+  hpMax: 50
+  atkPointMulti: 1
   expCurrent: 0
-  expMax: 0
-  expMulti: 0
+  expMax: 50
+  expMulti: 1
   speed: 15
-  atkPoint: 10
+  atkFrequency: 5
 --- !u!1 &3317355483084831935
 GameObject:
   m_ObjectHideFlags: 0

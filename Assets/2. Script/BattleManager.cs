@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        GameObject colliderObject = collision.gameObject;
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject colliderObject = collision.gameObject;
@@ -23,7 +17,10 @@ public class BattleManager : MonoBehaviour
 
     void OnBattle(GameObject gameObject)
     {
-        float damage = gameObject.GetComponent<Wepon>().damage;
+        float atkMulti = GameManager.instance.player.atkPointMulti;
+        
+        // 플레이어 공격력 배수에 비례하여 데미지 증가
+        float damage = gameObject.GetComponent<Wepon>().damage * atkMulti;
         Debug.Log("damage: " + damage);
 
         this.GetComponent<Target>().OnBattle(damage);

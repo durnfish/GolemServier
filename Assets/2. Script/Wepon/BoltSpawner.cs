@@ -7,7 +7,8 @@ public class BoltSpawner : MonoBehaviour
 
     public GameObject wepon;
     public Transform parent;
-    public float frequency;
+
+    public float atkSpeed;
     public int numProjectiles;
 
     List<GameObject> pool;
@@ -50,9 +51,8 @@ public class BoltSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(frequency);
+            yield return new WaitForSeconds(atkSpeed);
             MakeWepon();
-
         }
     }
 
