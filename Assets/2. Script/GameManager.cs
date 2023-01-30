@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     public PlayerObject player;
     public Camera mainCamera;
     public TimerManager timer;
-    public EnemyPoolManager poolManager;
+    public EnemyPoolManager enemyPoolManager;
+    public DropExpPoolManager expPoolManager;
 
     private void Awake()
     {

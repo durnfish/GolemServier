@@ -9,9 +9,6 @@ public class EnemySpawnManager : MonoBehaviour
     //스폰 될 장소가 들어갈 배열
     [SerializeField] GameObject[] spawnPoints;
 
-    [SerializeField] GameObject enemy1, enemy2;
-
-
     PlayerObject player;
     Camera mainCamera;
     private void Start()
@@ -32,11 +29,6 @@ public class EnemySpawnManager : MonoBehaviour
 
         //코루틴 시작
         StartCoroutine(EnemySpawnTime());
-    }
-
-    void Update()
-    {
-        
     }
 
     //몬스터가 스폰될 시간을 재는 함수
@@ -62,7 +54,7 @@ public class EnemySpawnManager : MonoBehaviour
     {
         for(int i = 0; i < 10; i++)
         {
-            GameObject creatEnemy = GameManager.instance.poolManager.GetEnemy(Random.Range(0, 2));
+            GameObject creatEnemy = GameManager.instance.enemyPoolManager.GetEnemy(Random.Range(0, 2));
             creatEnemy.transform.position = spawnPoints[i].transform.position;
         }
     }

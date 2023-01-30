@@ -24,27 +24,27 @@ public class BoltSpawner : MonoBehaviour
     }
     public GameObject GetWepon()
     {
-        GameObject select = null;
+        GameObject wepon = null;
 
         //객체 검색 및 가져오기
         foreach (GameObject item in pool)
         {
             if (!item.activeSelf)
             {
-                select = item;
-                select.SetActive(true);
-                return select;
+                wepon = item;
+                wepon.SetActive(true);
+                return wepon;
             }
         }
         //검색을 해도 걸리는게 없었다면, 객체 생성
-        if (!select)
+        if (!wepon)
         {
-            select = Instantiate(wepon, parent);
-            pool.Add(select);
-            return select;
+            wepon = Instantiate(this.wepon, parent);
+            pool.Add(wepon);
+            return wepon;
         }
 
-        return select;
+        return wepon;
     }
 
     IEnumerator Spawn()

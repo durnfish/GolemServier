@@ -74,6 +74,7 @@
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
     <Compile Include="Assets\2. Script\Player\CameraPlayerTracking.cs" />
     <Compile Include="Assets\2. Script\Enemy\EnemyManager.cs" />
+    <Compile Include="Assets\2. Script\Enemy\DropExpPoolManager.cs" />
     <Compile Include="Assets\2. Script\Wepon\Wepon.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
     <Compile Include="Assets\2. Script\Enemy\EnemyObject\Enemy1.cs" />

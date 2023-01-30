@@ -9,17 +9,17 @@ public class EnemyPoolManager : MonoBehaviour
     [SerializeField] GameObject[] enemies;
 
     //리스트가 들어갈, 리스트 배열 풀
-    List<GameObject>[] pools;
+    List<GameObject>[] EnemyPools;
 
     private void Awake()
     {
         //몬스터 숫자 만큼의 리스트 배열 생성
-        pools = new List<GameObject>[enemies.Length];
+        EnemyPools = new List<GameObject>[enemies.Length];
 
         //배열에 리스트가 들어감
         for (int i =0;i<enemies.Length;i++)
         {
-            pools[i] = new List<GameObject>();
+            EnemyPools[i] = new List<GameObject>();
         }
     }
 
@@ -29,7 +29,7 @@ public class EnemyPoolManager : MonoBehaviour
         GameObject select = null;
         
         //객체 검색 및 가져오기
-        foreach(GameObject item in pools[index])
+        foreach(GameObject item in EnemyPools[index])
         {
             if (!item.activeSelf)
             {
@@ -42,7 +42,7 @@ public class EnemyPoolManager : MonoBehaviour
         if (!select)
         {
             select = Instantiate(enemies[index], poolTransform);
-            pools[index].Add(select);
+            EnemyPools[index].Add(select);
             return select;
         }
 

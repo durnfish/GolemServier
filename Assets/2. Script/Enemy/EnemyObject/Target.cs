@@ -19,6 +19,10 @@ public class Target : MonoBehaviour
         if (currentHp <= 0)
         {
             gameObject.SetActive(false);
+
+            GameObject dropExp =  GameManager.instance.expPoolManager.GetExp();
+            dropExp.transform.position = gameObject.transform.position;
+
             currentHp = maxHp;
         }
     }
