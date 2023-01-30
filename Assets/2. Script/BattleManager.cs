@@ -21,7 +21,6 @@ public class BattleManager : MonoBehaviour
         
         // 플레이어 공격력 배수에 비례하여 데미지 증가
         float damage = gameObject.GetComponent<Wepon>().damage * atkMulti;
-        Debug.Log("damage: " + damage);
 
         this.GetComponent<Target>().OnBattle(damage);
     }

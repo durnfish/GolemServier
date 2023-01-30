@@ -15,7 +15,6 @@ public class Target : MonoBehaviour
     public void OnBattle(float damage)
     {
         currentHp -= damage;
-        Debug.Log(currentHp);
         if (currentHp <= 0)
         {
             gameObject.SetActive(false);

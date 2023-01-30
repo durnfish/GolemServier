@@ -80,6 +80,8 @@
     <Compile Include="Assets\2. Script\Enemy\EnemyObject\Enemy1.cs" />
     <Compile Include="Assets\2. Script\Wepon\BoltSpawner.cs" />
     <Compile Include="Assets\2. Script\BattleManager.cs" />
+    <Compile Include="Assets\2. Script\ExpManager.cs" />
+    <Compile Include="Assets\2. Script\Player\ExpSliderManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
