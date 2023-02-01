@@ -13,12 +13,12 @@ public class BattleManager : MonoBehaviour
             OnBattle(colliderObject);
 
             Animator animation = colliderObject.GetComponent<Wepon>().hitEffect;
-            animation.SetBool("Hit", true);
+            //animation.SetBool("Hit", true);
             if (EndCheck(animation))
             {
                 Debug.Log("Hit");
             }
-            colliderObject.SetActive(false);
+            //colliderObject.SetActive(false);
         }
     }
 
