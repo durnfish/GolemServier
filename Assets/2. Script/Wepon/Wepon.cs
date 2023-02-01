@@ -6,4 +6,6 @@ public class Wepon : MonoBehaviour
 {
     public float damage;
     public float speed;
+    public Animator hitEffect;
+
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class ExpManager : MonoBehaviour
 {
@@ -20,19 +21,9 @@ public class ExpManager : MonoBehaviour
         float expMax = GameManager.instance.player.expMax;
         float expMulti = GameManager.instance.player.expMulti;
 
-        GameManager.instance.expSlider.currentExp += 10 * expMulti;
-        float currentExp = GameManager.instance.expSlider.currentExp;
+        GameManager.instance.player.expCurrent += 10 * expMulti;
+        float currentExp = GameManager.instance.player.expCurrent;
 
         Debug.Log(currentExp);
-
-        if (currentExp >= expMax)
-        {
-            LevelUp();
-        }
-    }
-
-    void LevelUp()
-    {
-        GameManager.instance.expSlider.currentExp = 0;
     }
 }

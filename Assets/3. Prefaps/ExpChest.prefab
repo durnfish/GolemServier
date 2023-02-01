@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4240652110518788485}
   - component: {fileID: 1287466653393886020}
   - component: {fileID: 5551060413507287431}
+  - component: {fileID: 3175864884791080136}
   m_Layer: 20
   m_Name: ExpChest
   m_TagString: Untagged
@@ -147,6 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b043f1c92e7a8404fac952e6505a64ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!210 &3175864884791080136
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240652110518788482}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
 --- !u!1 &4240652110539413833
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class EnemySpawnManager : MonoBehaviour
     [SerializeField] GameObject spawnPoint;
     //스폰 될 장소가 들어갈 배열
     [SerializeField] GameObject[] spawnPoints;
+    [SerializeField] float spawnNum;
 
     PlayerObject player;
     Camera mainCamera;
@@ -28,11 +29,11 @@ public class EnemySpawnManager : MonoBehaviour
         EnemySpawn();
 
         //코루틴 시작
-        StartCoroutine(EnemySpawnTime());
+        StartCoroutine(EnemySpawnTime(spawnNum));
     }
 
     //몬스터가 스폰될 시간을 재는 함수
-    IEnumerator EnemySpawnTime()
+    IEnumerator EnemySpawnTime(float spawnNum)
     {
         while (true)
         {
@@ -40,7 +41,7 @@ public class EnemySpawnManager : MonoBehaviour
             yield return new WaitForSeconds(10.0f);
 
             //스폰 되기 전 스폰 포인트 위치를 바꾸어 준다.
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < spawnNum; i++)
             {
                 spawnPoints[i].transform.position = new Vector2(GetSpawnPosition().x, GetSpawnPosition().y);
             }

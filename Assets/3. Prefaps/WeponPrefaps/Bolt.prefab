@@ -171,4 +171,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   speed: 10
+  hitEffect: {fileID: 3022708402029639487}
   wepon: {fileID: 3022708402029639477}

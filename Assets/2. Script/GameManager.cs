@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public TimerManager timer;
     public EnemyPoolManager enemyPoolManager;
     public DropExpPoolManager expPoolManager;
-    public ExpSliderManager expSlider;
 
     private void Awake()
     {
