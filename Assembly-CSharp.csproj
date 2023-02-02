@@ -69,13 +69,16 @@
     <Compile Include="Assets\2. Script\Enemy\EnemySpawnManager.cs" />
     <Compile Include="Assets\2. Script\GameManager.cs" />
     <Compile Include="Assets\2. Script\UGUI\TimerManager.cs" />
+    <Compile Include="Assets\2. Script\UGUI\Exp\ExpUpdate.cs" />
     <Compile Include="Assets\2. Script\Enemy\EnemyPoolManager.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
     <Compile Include="Assets\2. Script\Player\PlayerObject.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
+    <Compile Include="Assets\2. Script\UGUI\Exp\FillRound.cs" />
     <Compile Include="Assets\2. Script\Player\CameraPlayerTracking.cs" />
     <Compile Include="Assets\2. Script\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\2. Script\Enemy\DropExpPoolManager.cs" />
+    <Compile Include="Assets\2. Script\ChargeBolt.cs" />
     <Compile Include="Assets\2. Script\Wepon\Wepon.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
     <Compile Include="Assets\2. Script\Enemy\EnemyObject\Enemy1.cs" />
@@ -83,8 +86,6 @@
     <Compile Include="Assets\2. Script\BattleManager.cs" />
     <Compile Include="Assets\2. Script\UGUI\SpellBook\SpellBook.cs" />
     <Compile Include="Assets\2. Script\UGUI\Exp\ImgsFillDynamic.cs" />
-    <Compile Include="Assets\2. Script\UGUI\Exp\ExpUpdate.cs" />
-    <Compile Include="Assets\2. Script\UGUI\Exp\FillRound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
