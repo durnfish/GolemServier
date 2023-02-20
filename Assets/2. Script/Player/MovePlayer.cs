@@ -15,7 +15,8 @@ public class MovePlayer : MonoBehaviour
         idle = 0,
         left = 1,
         forward = 2,
-        right = 3
+        right = 3,
+        back = 4
     }
 
     private void Awake()
@@ -47,9 +48,13 @@ public class MovePlayer : MonoBehaviour
         {
             animator.SetInteger(animationState, (int)States.left);
         }
-        else if (h == 0 && v != 0)
+        else if (h == 0 && v < 0)
         {
             animator.SetInteger(animationState, (int)States.forward);
+        }
+        else if (h == 0 && v > 0)
+        {
+            animator.SetInteger(animationState, (int)States.back);
         }
         else animator.SetInteger(animationState, (int)States.idle);
     }
